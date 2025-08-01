@@ -1,0 +1,42 @@
+# Node/Bun dependencies
+node_modules/
+bun.lockb
+pnpm-lock.yaml
+npm-debug.log*
+yarn.lock
+
+# Nuxt build output
+apps/frontend/.nuxt/
+apps/frontend/.output/
+apps/frontend/dist/
+
+# Backend build output
+apps/backend/dist/
+apps/backend/.output/
+
+# Environment files
+*.env
+*.env.*
+
+# Database files
+database/data/
+database/*.sqlite
+
+# Docker
+*.pid
+*.sock
+
+# Logs
+logs/
+*.log
+
+# IDE/editor
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# OS files
+Thumbs.db
+
+# Misc
