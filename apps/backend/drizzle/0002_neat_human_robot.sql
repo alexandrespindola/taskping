@@ -1,0 +1,1 @@
+ALTER TABLE "reminders" ALTER COLUMN "whatsapp_recipient" SET DATA TYPE varchar(100);

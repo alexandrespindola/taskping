@@ -17,9 +17,9 @@ export const reminders = pgTable('reminders', {
     message: text('message'),
     remindAt: timestamp('remind_at').notNull(),
     sendByEmail: pgBoolean('send_by_email').default(false),
-    emailRecipient: varchar('email_recipient', { length: 255} ).notNull(),
+    emailRecipient: varchar('email_recipient', { length: 255} ),
     sendByWhatsapp: pgBoolean('send_by_whatsapp').default(false),
-    whatsappRecipient: varchar('whatsapp_recipient', { length: 20} ).notNull(),
+    whatsappRecipient: varchar('whatsapp_recipient', { length: 100} ),
     sent: pgBoolean('sent').default(false),
     createdAt: timestamp('created_at').defaultNow()
 })
