@@ -12,11 +12,11 @@ async function seedDataBase() {
 
   try {
     // Clear existing data
-    await db.delete(reminders);
-    await db.delete(users);
+    // await db.delete(reminders);
+    // await db.delete(users);
 
     // Create multiple fake users
-    const numberToCreate = 500;
+    const numberToCreate = 10;
     const usersToCreate = await Promise.all(
       Array.from({ length: numberToCreate }, async () => {
         return {
