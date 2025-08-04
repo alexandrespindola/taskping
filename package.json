@@ -1,0 +1,34 @@
+{
+  "name": "taskping-backend",
+  "version": "1.0.0",
+  "description": "TaskPing Backend API with Hono and Bun",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "start": "bun run src/index.ts", 
+    "build": "bun build src/index.ts --target=bun --outdir=dist",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.1",
+    "drizzle-orm": "^0.44.4",
+    "hono": "^4.8.10",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/bun": "latest",
+    "@types/pg": "^8.15.5",
+    "drizzle-kit": "^0.31.4"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "keywords": ["hono", "bun", "api", "postgresql", "drizzle"],
+  "author": "Your Name",
+  "license": "MIT"
+}

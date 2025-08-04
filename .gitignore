@@ -1,42 +1,34 @@
-# Node/Bun dependencies
-node_modules/
-bun.lockb
-pnpm-lock.yaml
-npm-debug.log*
-yarn.lock
+# dependencies (bun install)
+node_modules
 
-# Nuxt build output
-apps/frontend/.nuxt/
-apps/frontend/.output/
-apps/frontend/dist/
+# output
+out
+dist
+*.tgz
 
-# Backend build output
-apps/backend/dist/
-apps/backend/.output/
+# code coverage
+coverage
+*.lcov
 
-# Environment files
-*.env
-*.env.*
+# logs
+logs
+_.log
+report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
-# Database files
-database/data/
-database/*.sqlite
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
 
-# Docker
-*.pid
-*.sock
+# caches
+.eslintcache
+.cache
+*.tsbuildinfo
 
-# Logs
-logs/
-*.log
+# IntelliJ based IDEs
+.idea
 
-# IDE/editor
-.vscode/
-.idea/
+# Finder (MacOS) folder config
 .DS_Store
-*.swp
-
-# OS files
-Thumbs.db
-
-# Misc
