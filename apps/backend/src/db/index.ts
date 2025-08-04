@@ -1,8 +1,7 @@
 import { drizzle } from "drizzle-orm/node-postgres";
 
 // Load environment variables
-const databaseUrl = process.env.DATABASE_URL_NEON_DEV || 
-                   process.env.DATABASE_URL_DOCKER || 
+const databaseUrl = process.env.DATABASE_URL || 
                    "postgres://postgres:Rz5oojtW36eyLlhKUfS3@localhost:54325/taskping";
 
 export const db = drizzle(databaseUrl);
