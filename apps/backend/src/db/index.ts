@@ -1,9 +1,6 @@
 import { drizzle } from "drizzle-orm/node-postgres";
-import dotenv from "dotenv";
 
 // Load environment variables
-dotenv.config();
-
 const databaseUrl = process.env.DATABASE_URL_NEON_DEV || 
                    process.env.DATABASE_URL_DOCKER || 
                    "postgres://postgres:Rz5oojtW36eyLlhKUfS3@localhost:54325/taskping";
