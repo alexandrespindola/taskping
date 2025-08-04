@@ -19,6 +19,20 @@ usersRoute.get("/", async (c) => {
   return c.json(allUsers);
 });
 
+// GET /users/:id
+usersRoute.get("/:id", async (c) => {
+  const { id } = c.req.param();
+  
+  const current = await db
+    .select()
+    .from(users)
+    .where(eq(users.id, id));
+  if (current.length === 0) {
+    return c.json({ error: "User not found." }, 404);
+  }
+  return c.json(current[0]);
+});
+
 // POST /users
 usersRoute.post("/", async (c) => {
   const { name, email, password } = await c.req.json();
