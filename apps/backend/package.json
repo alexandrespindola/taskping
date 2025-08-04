@@ -19,5 +19,9 @@
     "drizzle-orm": "^0.44.4",
     "hono": "^4.8.10",
     "pg": "^8.16.3"
+  },
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "build": "bun build src/index.ts --target=node --outdir=dist"
   }
 }
